@@ -1,30 +1,45 @@
 /* Base Styles */
+:root {
+    --background-color: #FAF9F5;
+    --header-color: #DA291C;
+    --header-text-color: #FFFFFF;
+    --main-text-color: #343433;
+    --dropdown-hover: #e8e7e3;
+    --dropdown-bg: #f0efeb;
+    --link-color: #DA291C;
+    --link-hover-color: #b02218;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+html {
+    font-size: 16px;
+}
+
 body {
-    background-color: #FAF9F5;
-    color: #343433;
     font-family: 'Gentium Plus', serif;
+    background-color: var(--background-color);
+    color: var(--main-text-color);
     line-height: 1.6;
 }
 
-.arabic-text {
+.arabic {
     font-family: 'Scheherazade New', serif;
 }
 
 /* Header Styles */
 header {
-    background-color: #DA291C;
-    color: #FFFFFF;
+    background-color: var(--header-color);
+    color: var(--header-text-color);
     padding: 1rem 0;
     position: sticky;
     top: 0;
     z-index: 100;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .header-container {
@@ -33,32 +48,26 @@ header {
     align-items: center;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 1rem;
-}
-
-.title-container {
-    width: 30%;
-}
-
-.title {
-    font-weight: bold;
-    color: #FFFFFF;
-    text-decoration: none;
-    font-size: 1.8rem;
+    padding: 0 2rem;
 }
 
 .english-title {
-    text-align: left;
+    font-family: 'Gentium Plus', serif;
+    font-weight: bold;
+    font-size: 1.8rem;
+    flex: 1;
 }
 
 .arabic-title {
-    font-family: 'Rakkas', cursive;
+    font-family: 'Rakkas', serif;
+    font-size: 1.8rem;
     text-align: right;
-    direction: rtl;
+    flex: 1;
 }
 
 nav {
-    width: 40%;
+    flex: 2;
+    text-align: center;
 }
 
 nav ul {
@@ -72,43 +81,31 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #FFFFFF;
+    color: var(--header-text-color);
     text-decoration: none;
     font-weight: bold;
-    transition: opacity 0.3s;
+    transition: opacity 0.3s ease;
 }
 
 nav ul li a:hover {
     opacity: 0.8;
 }
 
-nav ul li a.active {
-    text-decoration: underline;
-}
-
 /* Main Content Styles */
 main {
     max-width: 1200px;
     margin: 2rem auto;
-    padding: 0 1rem;
+    padding: 0 2rem;
 }
 
-section {
-    margin-bottom: 3rem;
-}
-
-h1, h2, h3 {
-    margin-bottom: 1rem;
-    font-weight: bold;
-}
-
-h1 {
-    font-size: 2rem;
+.content-container {
+    min-height: 70vh;
 }
 
 h2 {
-    font-size: 1.5rem;
-    margin-top: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: var(--header-color);
 }
 
 p {
@@ -116,33 +113,101 @@ p {
     text-align: justify;
 }
 
-/* Homepage Specific Styles */
-.homepage-content {
-    display: flex;
-    gap: 2rem;
-}
-
+/* Home Page Styles */
 .blurb {
-    flex: 2;
+    width: 60%;
+    float: left;
+    padding-right: 2rem;
 }
 
 .featured-image {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    width: 35%;
+    float: right;
 }
 
 .featured-image img {
-    max-width: 100%;
+    width: 100%;
     height: auto;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .image-caption {
+    font-size: 0.8rem;
+    color: #666;
     margin-top: 0.5rem;
-    font-size: 0.8rem; /* Half the size of main text */
     text-align: center;
+}
+
+/* Dropdown Styles */
+.dropdown-section {
+    margin-bottom: 1rem;
+    border-radius: 4px;
+}
+
+.dropdown-button {
+    background-color: var(--dropdown-bg);
+    color: var(--main-text-color);
+    cursor: pointer;
+    padding: 1rem;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-family: 'Gentium Plus', serif;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-button:hover {
+    background-color: var(--dropdown-hover);
+}
+
+.dropdown-button:after {
+    content: '\002B';
+    color: var(--main-text-color);
+    font-weight: bold;
+    float: right;
+}
+
+.dropdown-button.active:after {
+    content: "\2212";
+}
+
+.dropdown-content {
+    padding: 0 1rem;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    background-color: var(--background-color);
+}
+
+.bibliography-list {
+    list-style-type: none;
+    padding: 1rem 0;
+}
+
+.bibliography-list li {
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 1rem;
+}
+
+.bibliography-list li:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+.bib-entry {
+    margin-bottom: 0.3rem;
+}
+
+.bib-note {
+    font-size: 0.9rem;
+    color: #666;
+    font-style: italic;
 }
 
 /* About Page Styles */
@@ -150,86 +215,96 @@ p {
     margin-bottom: 2rem;
 }
 
-.team-members {
+.team-container {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     gap: 2rem;
+    justify-content: space-between;
 }
 
 .team-member {
-    display: flex;
-    gap: 1.5rem;
-    padding: 1rem;
-    background-color: #f5f4f0;
-    border-radius: 5px;
+    flex: 1;
+    min-width: 250px;
+    max-width: 350px;
+    margin-bottom: 1.5rem;
 }
 
-.member-photo {
-    flex: 0 0 150px;
-}
-
-.member-photo img {
+.team-member img {
     width: 100%;
     height: auto;
-    border-radius: 5px;
-}
-
-.member-info {
-    flex: 1;
-}
-
-.member-info h3 {
+    border-radius: 4px;
     margin-bottom: 0.5rem;
 }
 
-.member-info a {
-    color: #DA291C;
+.team-member h3 {
+    margin-bottom: 0.5rem;
+}
+
+.team-member a {
+    color: var(--link-color);
     text-decoration: none;
     font-weight: bold;
 }
 
-.member-info a:hover {
+.team-member a:hover {
+    color: var(--link-hover-color);
     text-decoration: underline;
 }
 
-/* Dropdown Sections for Bibliography */
-.dropdown-section {
-    margin-bottom: 1rem;
-}
-
-.dropdown-button {
-    width: 100%;
-    background-color: #efeee9; /* Slightly darker than background */
-    color: #343433;
+/* Footer Styles */
+footer {
+    text-align: center;
     padding: 1rem;
-    text-align: left;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-family: 'Gentium Plus', serif;
-    font-size: 1rem;
-    font-weight: bold;
-    transition: background-color 0.3s;
+    margin-top: 2rem;
+    color: #666;
+    border-top: 1px solid #e0e0e0;
 }
 
-.dropdown-button:hover {
-    background-color: #e6e5e0;
+/* Clearfix for float layout */
+.content-container::after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
-.dropdown-content {
-    display: none;
-    padding: 1rem;
-    background-color: #f8f7f3;
-    border-radius: 0 0 5px 5px;
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+    }
+    
+    .english-title,
+    .arabic-title {
+        text-align: center;
+        margin-bottom: 0.5rem;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        margin: 1rem 0;
+    }
+    
+    nav ul li {
+        margin: 0.5rem 0;
+    }
+    
+    .blurb,
+    .featured-image {
+        width: 100%;
+        float: none;
+        padding-right: 0;
+    }
+    
+    .featured-image {
+        margin-top: 1.5rem;
+    }
+    
+    .team-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .team-member {
+        max-width: 100%;
+    }
 }
-
-.dropdown-section.active .dropdown-content {
-    display: block;
-}
-
-.bibliography-list {
-    list-style: none;
-}
-
-.bibliography-list li {
-    margin-bottom: 1.5rem
