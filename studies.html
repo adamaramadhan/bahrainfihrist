@@ -3,81 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bahrain Fihrist | Studies</title>
+    <title>Studies | Bahrain Fihrist | فهرست البحرين</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Gentium+Plus:ital,wght@0,400;0,700;1,400;1,700&family=Rakkas&family=Scheherazade+New:wght@400;700&display=swap" rel="stylesheet">
-    <script src="scripts.js" defer></script>
 </head>
 <body>
     <header>
         <div class="header-container">
-            <h1 class="english-title">Bahrain Fihrist</h1>
+            <div class="title-container">
+                <a href="index.html" class="title english-title">Bahrain Fihrist</a>
+            </div>
             <nav>
                 <ul>
-                    <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="primary-sources.html">Primary Sources</a></li>
-                    <li><a href="studies.html">Studies</a></li>
+                    <li><a href="studies.html" class="active">Studies</a></li>
                 </ul>
             </nav>
-            <h1 class="arabic-title">فهرست البحرين</h1>
+            <div class="title-container">
+                <a href="index.html" class="title arabic-title">فهرست البحرين</a>
+            </div>
         </div>
     </header>
     
     <main>
-        <div class="content-container">
-            <h2>Studies</h2>
-            <p>This section contains scholarly works, articles, books, and research papers that analyze and interpret Bahrain's history. Click on each category to explore the studies within.</p>
+        <section class="sources-content">
+            <h1>Studies</h1>
+            <p>This section contains bibliographic information about secondary sources and scholarly studies related to Bahraini history. Click on each category to explore the sources.</p>
             
+            <!-- Dropdown sections -->
             <div class="dropdown-section">
-                <button class="dropdown-button">Geographical Studies</button>
+                <button class="dropdown-button">Archaeological Studies</button>
                 <div class="dropdown-content">
                     <ul class="bibliography-list">
                         <li>
-                            <p class="bib-entry">Al-Nabi, Mohammad Noor. <em>The Historical Geography of Bahrain</em>. Manama: Historical Documents Centre, 2012.</p>
-                            <p class="bib-note">Analyzes geographical factors in Bahrain's historical development.</p>
+                            <p class="source-title">Crawford, Harriet (1998). <em>Dilmun and its Gulf Neighbours</em>. Cambridge University Press.</p>
+                            <p class="source-details">Comprehensive study of the ancient Dilmun civilization in Bahrain and its connections to Mesopotamia and the Indus Valley.</p>
                         </li>
                         <li>
-                            <p class="bib-entry">Vine, Peter. <em>Pearls in Arabian Waters: The Heritage of Bahrain</em>. London: Immel Publishing, 1986.</p>
-                            <p class="bib-note">Examines Bahrain's maritime geography and its influence on pearl diving industry.</p>
+                            <p class="source-title">Lombard, Pierre (1999). <em>Bahrain: The Civilization of the Two Seas</em>. Immel Publishing.</p>
+                            <p class="source-details">Overview of archaeological discoveries in Bahrain highlighting its role as a maritime crossroads.</p>
                         </li>
-                        <!-- Add more entries as needed -->
+                        <li>
+                            <p class="source-title">Potts, Daniel T. (2009). <em>The Archaeology and Early History of the Persian Gulf</em>. Oxford University Press.</p>
+                            <p class="source-details">Archaeological analysis of the Persian Gulf region with significant sections on ancient Bahrain.</p>
+                        </li>
                     </ul>
                 </div>
             </div>
             
             <div class="dropdown-section">
-                <button class="dropdown-button">Biographical Works</button>
+                <button class="dropdown-button">Political Studies</button>
                 <div class="dropdown-content">
                     <ul class="bibliography-list">
                         <li>
-                            <p class="bib-entry">Al-Tajir, Mahdi Abdalla. <em>Bahrain 1920-1945: Britain, the Shaikh and the Administration</em>. London: Croom Helm, 1987.</p>
-                            <p class="bib-note">Includes biographical information on key political figures in Bahrain.</p>
+                            <p class="source-title">Khuri, Fuad I. (1980). <em>Tribe and State in Bahrain</em>. University of Chicago Press.</p>
+                            <p class="source-details">Analysis of the transformation of tribal structures and the development of the modern state in Bahrain.</p>
                         </li>
                         <li>
-                            <p class="bib-entry">Belgrave, Charles. <em>Personal Column</em>. London: Hutchinson, 1960.</p>
-                            <p class="bib-note">Memoir of the British advisor to the rulers of Bahrain from 1926 to 1957.</p>
-                        </li>
-                        <!-- Add more entries as needed -->
-                    </ul>
-                </div>
-            </div>
-            
-            <div class="dropdown-section">
-                <button class="dropdown-button">Political History</button>
-                <div class="dropdown-content">
-                    <ul class="bibliography-list">
-                        <li>
-                            <p class="bib-entry">Khuri, Fuad I. <em>Tribe and State in Bahrain</em>. Chicago: University of Chicago Press, 1980.</p>
-                            <p class="bib-note">Analyzes the relationship between tribal structures and state formation in Bahrain.</p>
+                            <p class="source-title">Lawson, Fred H. (1989). <em>Bahrain: The Modernization of Autocracy</em>. Westview Press.</p>
+                            <p class="source-details">Study of political development in Bahrain from the late 19th century to the 1980s.</p>
                         </li>
                         <li>
-                            <p class="bib-entry">Lawson, Fred H. <em>Bahrain: The Modernization of Autocracy</em>. Boulder: Westview Press, 1989.</p>
-                            <p class="bib-note">Examines political development in Bahrain during the late 20th century.</p>
+                            <p class="source-title">Zahlan, Rosemarie Said (1998). <em>The Making of the Modern Gulf States</em>. Ithaca Press.</p>
+                            <p class="source-details">Comparative study including Bahrain's political evolution in the context of other Gulf states.</p>
                         </li>
-                        <!-- Add more entries as needed -->
                     </ul>
                 </div>
             </div>
@@ -87,39 +79,67 @@
                 <div class="dropdown-content">
                     <ul class="bibliography-list">
                         <li>
-                            <p class="bib-entry">Al-Khalifa, Abdullah bin Khalid and Michael Rice. <em>Bahrain through the Ages: The History</em>. London: Kegan Paul International, 1993.</p>
-                            <p class="bib-note">Contains chapters on economic developments in Bahrain's history.</p>
+                            <p class="source-title">Al-Rumaihi, Muhammad Ghanim (1976). <em>Bahrain: Social and Political Changes since the First World War</em>. University of Durham.</p>
+                            <p class="source-details">Analysis of Bahrain's economic transformation from pearl fishing to oil production.</p>
                         </li>
                         <li>
-                            <p class="bib-entry">Rumaihi, Muhammad Ghanim. <em>Bahrain: Social and Political Change since the First World War</em>. London: Bowker, 1976.</p>
-                            <p class="bib-note">Examines economic transformations in modern Bahrain.</p>
+                            <p class="source-title">Fuccaro, Nelida (2009). <em>Histories of City and State in the Persian Gulf: Manama since 1800</em>. Cambridge University Press.</p>
+                            <p class="source-details">Urban history focusing on Bahrain's capital city and its commercial development.</p>
                         </li>
-                        <!-- Add more entries as needed -->
+                        <li>
+                            <p class="source-title">Lawson, Fred H. (2022). <em>The Economy of Bahrain</em>. Routledge.</p>
+                            <p class="source-details">Comprehensive analysis of Bahrain's economic development from traditional industries to modern finance.</p>
+                        </li>
                     </ul>
                 </div>
             </div>
             
             <div class="dropdown-section">
-                <button class="dropdown-button">Cultural Studies</button>
+                <button class="dropdown-button">Social and Cultural Studies</button>
                 <div class="dropdown-content">
                     <ul class="bibliography-list">
                         <li>
-                            <p class="bib-entry">Holes, Clive. <em>Dialect, Culture, and Society in Eastern Arabia</em>. Leiden: Brill, 2001.</p>
-                            <p class="bib-note">Examines linguistic and cultural aspects of Bahraini society.</p>
+                            <p class="source-title">Holes, Clive (2001). <em>Dialect, Culture, and Society in Eastern Arabia</em>. Brill.</p>
+                            <p class="source-details">Sociolinguistic study of Bahraini Arabic dialects and their cultural context.</p>
                         </li>
                         <li>
-                            <p class="bib-entry">Al-Mubarak, Khalid. <em>Cultural Traditions in Bahrain</em>. Manama: Ministry of Information, 2005.</p>
-                            <p class="bib-note">Overview of Bahraini cultural practices and their historical origins.</p>
+                            <p class="source-title">Al-Tajir, Mahdi Abdalla (1987). <em>Language and Linguistic Origins in Bahrain</em>. Kegan Paul International.</p>
+                            <p class="source-details">Study of Bahraini linguistic heritage and its historical development.</p>
                         </li>
-                        <!-- Add more entries as needed -->
+                        <li>
+                            <p class="source-title">Al-Naqeeb, Khaldoun Hasan (1990). <em>Society and State in the Gulf and Arab Peninsula</em>. Routledge.</p>
+                            <p class="source-details">Sociological analysis of traditional and modern social structures in Bahrain and the wider Gulf region.</p>
+                        </li>
                     </ul>
                 </div>
             </div>
-        </div>
+            
+            <div class="dropdown-section">
+                <button class="dropdown-button">Biographical Studies</button>
+                <div class="dropdown-content">
+                    <ul class="bibliography-list">
+                        <li>
+                            <p class="source-title">Al-Khalifa, May (1999). <em>Charles Belgrave: Biography and Diaries</em>. Bahrain Historical & Archaeological Society.</p>
+                            <p class="source-details">Biographical study of the British advisor to the rulers of Bahrain from 1926 to 1957.</p>
+                        </li>
+                        <li>
+                            <p class="source-title">Zahlan, Rosemarie Said (2002). <em>The Al Khalifa Family and the Modern History of Bahrain</em>. Ithaca Press.</p>
+                            <p class="source-details">Historical analysis of Bahrain's ruling family and their role in the country's development.</p>
+                        </li>
+                        <li>
+                            <p class="source-title">Joyce, Miriam (2012). <em>Bahrain from the Twentieth Century to the Arab Spring</em>. Palgrave Macmillan.</p>
+                            <p class="source-details">Includes biographical studies of key political and cultural figures in modern Bahraini history.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
     </main>
-
+    
     <footer>
-        <p>&copy; 2025 Bahrain Fihrist. All rights reserved.</p>
+        <p>&copy; 2025 Bahrain Fihrist | فهرست البحرين</p>
     </footer>
+
+    <script src="scripts.js"></script>
 </body>
 </html>
