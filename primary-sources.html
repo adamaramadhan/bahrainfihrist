@@ -3,73 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Primary Sources | Bahrain Fihrist | فهرست البحرين</title>
+    <title>Bahrain Fihrist | Primary Sources</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Gentium+Plus:ital,wght@0,400;0,700;1,400;1,700&family=Rakkas&family=Scheherazade+New:wght@400;700&display=swap" rel="stylesheet">
+    <script src="scripts.js" defer></script>
 </head>
 <body>
     <header>
         <div class="header-container">
-            <div class="title-container">
-                <a href="index.html" class="title english-title">Bahrain Fihrist</a>
-            </div>
+            <h1 class="english-title">Bahrain Fihrist</h1>
             <nav>
                 <ul>
+                    <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
-                    <li><a href="primary-sources.html" class="active">Primary Sources</a></li>
+                    <li><a href="primary-sources.html">Primary Sources</a></li>
                     <li><a href="studies.html">Studies</a></li>
                 </ul>
             </nav>
-            <div class="title-container">
-                <a href="index.html" class="title arabic-title">فهرست البحرين</a>
-            </div>
+            <h1 class="arabic-title">فهرست البحرين</h1>
         </div>
     </header>
     
     <main>
-        <section class="sources-content">
-            <h1>Primary Sources</h1>
-            <p>This section contains bibliographic information about primary sources related to Bahraini history. Click on each category to explore the sources.</p>
+        <div class="content-container">
+            <h2>Primary Sources</h2>
+            <p>This section contains original historical documents, manuscripts, and firsthand accounts related to Bahrain's history. Click on each category to explore the sources within.</p>
             
-            <!-- Dropdown sections -->
             <div class="dropdown-section">
-                <button class="dropdown-button">Historical Manuscripts</button>
+                <button class="dropdown-button">Historical Chronicles</button>
                 <div class="dropdown-content">
                     <ul class="bibliography-list">
                         <li>
-                            <p class="source-title">Al-Ahsa'i, Ahmad ibn Zayn al-Din (1815). <em>Tarikh al-Bahrayn wa-al-Ahsa</em>.</p>
-                            <p class="source-details">Manuscript preserved in the Bahrain National Museum. One of the earliest comprehensive historical accounts of Bahrain and the Al-Ahsa region.</p>
+                            <p class="bib-entry">Al-Bahrani, Yusuf. <em>Lu'lu'at al-Bahrayn</em>. Ed. Muhammad Sadiq Bahr al-'Ulum. Najaf: Matba'at al-Nu'man, 1966.</p>
+                            <p class="bib-note">A seminal biographical dictionary of Bahraini scholars from the 13th century CE.</p>
                         </li>
                         <li>
-                            <p class="source-title">Al-Nabhani, Muhammad ibn Khalifah (1892). <em>Al-Tuhfah al-Nabhaniyah fi Tarikh al-Jazirah al-Arabiyah</em>.</p>
-                            <p class="source-details">Historical chronicle focusing on the Arabian Peninsula with substantial sections on Bahrain.</p>
+                            <p class="bib-entry">Ibn Battuta. <em>Rihlat Ibn Battuta</em>. Beirut: Dar Sadir, 1964.</p>
+                            <p class="bib-note">Contains descriptions of Bahrain during the author's travels in the 14th century.</p>
                         </li>
-                        <li>
-                            <p class="source-title">Ibn Battuta (14th century). <em>Rihlat Ibn Battuta</em>.</p>
-                            <p class="source-details">The famous traveler's account includes descriptions of Bahrain during his journey through the region.</p>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            
-            <div class="dropdown-section">
-                <button class="dropdown-button">Colonial Records</button>
-                <div class="dropdown-content">
-                    <ul class="bibliography-list">
-                        <li>
-                            <p class="source-title">East India Company (1763-1850). <em>East India Company Records on Bahrain</em>.</p>
-                            <p class="source-details">British Library, London. Collection of correspondence, reports, and agreements pertaining to British interests in Bahrain.</p>
-                        </li>
-                        <li>
-                            <p class="source-title">Lorimer, J.G. (1908-1915). <em>Gazetteer of the Persian Gulf, Oman and Central Arabia</em>.</p>
-                            <p class="source-details">Comprehensive British intelligence report with detailed information on Bahrain's geography, history, and tribal politics.</p>
-                        </li>
-                        <li>
-                            <p class="source-title">India Office Records (1820-1947). <em>Political and Secret Department Files on Bahrain</em>.</p>
-                            <p class="source-details">British Library, London. Collection including political reports, administrative correspondence, and treaties related to Bahrain.</p>
-                        </li>
+                        <!-- Add more entries as needed -->
                     </ul>
                 </div>
             </div>
@@ -79,67 +53,56 @@
                 <div class="dropdown-content">
                     <ul class="bibliography-list">
                         <li>
-                            <p class="source-title">Belgrave, Charles (1960). <em>Personal Column</em>.</p>
-                            <p class="source-details">Memoir of the British advisor to the rulers of Bahrain from 1926 to 1957.</p>
+                            <p class="bib-entry">Lorimer, J.G. <em>Gazetteer of the Persian Gulf, Oman and Central Arabia</em>. Calcutta: Superintendent Government Printing, 1908-1915.</p>
+                            <p class="bib-note">Contains detailed information about Bahrain in the early 20th century.</p>
                         </li>
                         <li>
-                            <p class="source-title">Bent, Theodore and Mabel (1890). <em>Southern Arabia, Bahrain, and Ancient Settlements in the Persian Gulf</em>.</p>
-                            <p class="source-details">Archaeological and ethnographic observations from the Bents' travels in the region.</p>
+                            <p class="bib-entry">Palgrave, William Gifford. <em>Narrative of a Year's Journey Through Central and Eastern Arabia (1862-63)</em>. London: Macmillan and Co., 1865.</p>
+                            <p class="bib-note">Includes observations on Bahrain during the author's travels.</p>
                         </li>
-                        <li>
-                            <p class="source-title">Palgrave, William Gifford (1865). <em>Narrative of a Year's Journey Through Central and Eastern Arabia</em>.</p>
-                            <p class="source-details">First-hand account of Bahrain and its pearl industry in the mid-19th century.</p>
-                        </li>
+                        <!-- Add more entries as needed -->
                     </ul>
                 </div>
             </div>
             
             <div class="dropdown-section">
-                <button class="dropdown-button">Archaeological Reports</button>
+                <button class="dropdown-button">Government Documents</button>
                 <div class="dropdown-content">
                     <ul class="bibliography-list">
                         <li>
-                            <p class="source-title">Glob, P.V. (1954-1970). <em>Danish Archaeological Expeditions to Bahrain</em>.</p>
-                            <p class="source-details">Field reports and findings from the pioneering Danish archaeological missions to Bahrain.</p>
+                            <p class="bib-entry">British Political Agency Records, Bahrain. India Office Records, British Library.</p>
+                            <p class="bib-note">Archive containing correspondence and reports relating to Bahrain, 1900-1947.</p>
                         </li>
                         <li>
-                            <p class="source-title">Rice, Michael (1985). <em>Dilmun Discovered: The Early Years of Archaeology in Bahrain</em>.</p>
-                            <p class="source-details">Documentation of early archaeological work in Bahrain with primary source material.</p>
+                            <p class="bib-entry">Annual Reports on the Persian Gulf. Foreign Office Records, The National Archives, UK.</p>
+                            <p class="bib-note">Contains yearly assessments of political and economic developments in Bahrain.</p>
                         </li>
-                        <li>
-                            <p class="source-title">Bibby, Geoffrey (1969). <em>Looking for Dilmun</em>.</p>
-                            <p class="source-details">Personal account of archaeological discoveries in Bahrain by a member of the Danish expedition.</p>
-                        </li>
+                        <!-- Add more entries as needed -->
                     </ul>
                 </div>
             </div>
             
             <div class="dropdown-section">
-                <button class="dropdown-button">Local Historical Documents</button>
+                <button class="dropdown-button">Archaeological Records</button>
                 <div class="dropdown-content">
                     <ul class="bibliography-list">
                         <li>
-                            <p class="source-title">Al-Tajir Family Archives (18th-20th centuries). <em>Merchant Records and Correspondence</em>.</p>
-                            <p class="source-details">Private collection. Business records, letters, and agreements of a prominent Bahraini trading family.</p>
+                            <p class="bib-entry">Glob, P.V. <em>Danish Archaeological Investigations in Bahrain</em>. Copenhagen: Gyldendal, 1957.</p>
+                            <p class="bib-note">Documentation of early archaeological excavations in Bahrain.</p>
                         </li>
                         <li>
-                            <p class="source-title">Bahrain Court Records (1920-1960). <em>Legal Documents and Case Files</em>.</p>
-                            <p class="source-details">Bahrain National Archives. Collection of legal proceedings showing social and economic aspects of daily life.</p>
+                            <p class="bib-entry">Rice, Michael. <em>The Archaeology of the Arabian Gulf</em>. London: Routledge, 1994.</p>
+                            <p class="bib-note">Contains chapters on archaeological findings in Bahrain.</p>
                         </li>
-                        <li>
-                            <p class="source-title">Pearl Diving Contracts (1850-1930). <em>Collection of Commercial Agreements</em>.</p>
-                            <p class="source-details">Bahrain National Museum. Documents detailing the organization and financing of pearl diving expeditions.</p>
-                        </li>
+                        <!-- Add more entries as needed -->
                     </ul>
                 </div>
             </div>
-        </section>
+        </div>
     </main>
-    
-    <footer>
-        <p>&copy; 2025 Bahrain Fihrist | فهرست البحرين</p>
-    </footer>
 
-    <script src="scripts.js"></script>
+    <footer>
+        <p>&copy; 2025 Bahrain Fihrist. All rights reserved.</p>
+    </footer>
 </body>
 </html>
