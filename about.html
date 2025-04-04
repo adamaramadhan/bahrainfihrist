@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bahrain Fihrist | About</title>
+    <title>About | Bahrain Fihrist | فهرست البحرين</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,56 +12,76 @@
 <body>
     <header>
         <div class="header-container">
-            <h1 class="english-title">Bahrain Fihrist</h1>
+            <div class="title-container">
+                <a href="index.html" class="title english-title">Bahrain Fihrist</a>
+            </div>
             <nav>
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
+                    <li><a href="about.html" class="active">About</a></li>
                     <li><a href="primary-sources.html">Primary Sources</a></li>
                     <li><a href="studies.html">Studies</a></li>
                 </ul>
             </nav>
-            <h1 class="arabic-title">فهرست البحرين</h1>
+            <div class="title-container">
+                <a href="index.html" class="title arabic-title">فهرست البحرين</a>
+            </div>
         </div>
     </header>
     
     <main>
-        <div class="content-container">
-            <h2>About the Project</h2>
+        <section class="about-content">
+            <h1>About the Project</h1>
             <div class="about-description">
-                <p>The Bahrain Fihrist project aims to create a comprehensive bibliography of works related to Bahraini history. By bringing together both primary sources and scholarly studies in one accessible platform, we hope to facilitate research and deepen understanding of Bahrain's rich historical heritage.</p>
-                <p>This digital bibliography serves as a resource for academics, researchers, students, and anyone interested in the history of Bahrain and the wider Gulf region. Our team carefully curates and organizes these references to ensure the highest standards of academic rigor.</p>
-                <p>The term "Fihrist" (فهرست) refers to a catalog or index in Arabic, reflecting our mission to systematically organize and present historical works about Bahrain.</p>
+                <p>The Bahrain Fihrist (فهرست البحرين) is a digital bibliography project dedicated to the comprehensive documentation of scholarly resources on Bahraini history. "Fihrist" (فهرست) is the Arabic word for "catalog" or "index," reflecting our mission to create an organized catalog of historical materials related to Bahrain.</p>
+                <p>This project aims to serve as a central resource for academics, researchers, students, and anyone interested in the rich history of Bahrain. By collecting and categorizing both primary and secondary sources, we hope to facilitate deeper understanding and further research into Bahraini historical studies.</p>
+                <p>Our bibliography includes a wide range of materials, from ancient manuscripts and archival documents to contemporary academic studies. Each entry is carefully categorized to enable efficient searching and browsing based on time periods, subject matter, and resource type.</p>
             </div>
             
             <h2>Our Team</h2>
-            <div class="team-container">
+            <div class="team-members">
+                <!-- Team Member 1 -->
                 <div class="team-member">
-                    <img src="team-member1.jpg" alt="Team Member 1">
-                    <h3>Name Here</h3>
-                    <p>Brief biography of team member. Their background, expertise, and contribution to the project. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    <a href="https://website-url.com" target="_blank">Personal Website</a>
+                    <div class="member-photo">
+                        <img src="assets/team/member1.jpg" alt="Team Member 1">
+                    </div>
+                    <div class="member-info">
+                        <h3>Dr. Sarah Al-Zayani</h3>
+                        <p>Historian specializing in Gulf cultural history with a focus on Bahrain. Dr. Al-Zayani has published extensively on the cultural exchanges between Bahrain and other regions throughout history.</p>
+                        <p><a href="http://www.example.com/alzayani" target="_blank">Personal Website</a></p>
+                    </div>
                 </div>
                 
+                <!-- Team Member 2 -->
                 <div class="team-member">
-                    <img src="team-member2.jpg" alt="Team Member 2">
-                    <h3>Name Here</h3>
-                    <p>Brief biography of team member. Their background, expertise, and contribution to the project. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    <a href="https://website-url.com" target="_blank">Personal Website</a>
+                    <div class="member-photo">
+                        <img src="assets/team/member2.jpg" alt="Team Member 2">
+                    </div>
+                    <div class="member-info">
+                        <h3>Professor Ahmed Khalaf</h3>
+                        <p>Expert in manuscript studies and historical documents of the Gulf region. Professor Khalaf has worked extensively with primary source materials from the 18th-20th centuries.</p>
+                        <p><a href="http://www.example.com/khalaf" target="_blank">Personal Website</a></p>
+                    </div>
                 </div>
                 
+                <!-- Team Member 3 -->
                 <div class="team-member">
-                    <img src="team-member3.jpg" alt="Team Member 3">
-                    <h3>Name Here</h3>
-                    <p>Brief biography of team member. Their background, expertise, and contribution to the project. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    <a href="https://website-url.com" target="_blank">Personal Website</a>
+                    <div class="member-photo">
+                        <img src="assets/team/member3.jpg" alt="Team Member 3">
+                    </div>
+                    <div class="member-info">
+                        <h3>Mariam Al-Doseri</h3>
+                        <p>Digital humanities specialist focusing on the preservation and digital cataloging of historical materials. Mariam leads the technical implementation of the Bahrain Fihrist project.</p>
+                        <p><a href="http://www.example.com/aldoseri" target="_blank">Personal Website</a></p>
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
     </main>
-
+    
     <footer>
-        <p>&copy; 2025 Bahrain Fihrist. All rights reserved.</p>
+        <p>&copy; 2025 Bahrain Fihrist | فهرست البحرين</p>
     </footer>
+
+    <script src="scripts.js"></script>
 </body>
 </html>
