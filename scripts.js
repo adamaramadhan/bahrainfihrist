@@ -17,25 +17,39 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
-    // Hide header on scroll down, show on scroll up
+    // Header scroll behavior
     const header = document.querySelector('header');
-    let lastScrollTop = 0;
-    let scrollThreshold = 10; // Minimum scroll distance before showing/hiding header
+    let lastScrollY = window.scrollY;
+    let scrollingDown = true;
+    let ticking = false;
     
-    window.addEventListener('scroll', function() {
-        let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+    function onScroll() {
+        const currentScrollY = window.scrollY;
         
-        // Check if we've scrolled more than the threshold
-        if (Math.abs(lastScrollTop - currentScroll) > scrollThreshold) {
-            // Scrolling down and not at the top
-            if (currentScroll > lastScrollTop && currentScroll > header.offsetHeight) {
-                header.classList.add('hidden');
-            } 
-            // Scrolling up or at the top
-            else {
-                header.classList.remove('hidden');
+        if (currentScrollY <= 0) {
+            // At the top of page, always show header
+            header.classList.remove('header-hidden');
+        } else {
+            // Determine scroll direction
+            scrollingDown = currentScrollY > lastScrollY;
+            
+            // Hide on scroll down, show on scroll up
+            if (scrollingDown) {
+                header.classList.add('header-hidden');
+            } else {
+                header.classList.remove('header-hidden');
             }
-            lastScrollTop = currentScroll;
+        }
+        
+        lastScrollY = currentScrollY;
+        ticking = false;
+    }
+    
+    // Throttle scroll events for better performance
+    window.addEventListener('scroll', function() {
+        if (!ticking) {
+            window.requestAnimationFrame(onScroll);
+            ticking = true;
         }
     }, { passive: true });
 });
