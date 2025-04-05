@@ -308,3 +308,66 @@ footer {
         max-width: 100%;
     }
 }
+
+/* Add these new styles to your existing styles.css file */
+
+/* Header Scroll Behavior */
+header {
+    background-color: var(--header-color);
+    color: var(--header-text-color);
+    padding: 1rem 0;
+    position: fixed; /* Change from sticky to fixed */
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+/* Add this class for hiding the header */
+header.hidden {
+    transform: translateY(-100%);
+}
+
+/* Add padding to the body to prevent content from being hidden under the fixed header */
+body {
+    font-family: 'Gentium Plus', serif;
+    background-color: var(--background-color);
+    color: var(--main-text-color);
+    line-height: 1.6;
+    padding-top: 6rem; /* Adjust this value based on your header height */
+}
+
+/* Responsive header size adjustments */
+@media screen and (max-width: 768px) {
+    header {
+        padding: 0.5rem 0;
+    }
+    
+    .english-title,
+    .arabic-title {
+        font-size: 1.4rem;
+        margin-bottom: 0.3rem;
+    }
+    
+    body {
+        padding-top: 7rem; /* Adjust based on collapsed mobile header height */
+    }
+    
+    nav ul {
+        flex-direction: row; /* Keep horizontal on mobile but reduce size */
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 0.5rem 0;
+    }
+    
+    nav ul li {
+        margin: 0.2rem 0.5rem;
+        font-size: 0.9rem;
+    }
+    
+    .header-container {
+        padding: 0 1rem;
+    }
+}
