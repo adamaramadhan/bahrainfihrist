@@ -3,182 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog Post Title - Your Site Name</title>
-    <link rel="stylesheet" href="../styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Gentium+Plus:wght@400;700&family=Rakkas&family=Scheherazade+New&display=swap" rel="stylesheet">
+    <title>Blog Post Title - Bahrain Fihrist</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gentium+Plus:ital,wght@0,400;0,700;1,400;1,700&family=Rakkas&family=Scheherazade+New:wght@400;700&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
 </head>
 <body>
-    <header>
+    <header id="site-header">
         <div class="header-container">
-            <div class="english-title">Bahrain Fihrist</div>
+            <div class="title-container">
+                <h1 class="english-title">Bahrain Fihrist</h1>
+            </div>
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="primary-sources.html">Primary Sources</a></li>
                     <li><a href="studies.html">Studies</a></li>
-                    <li><a href="posts.html">Posts</a></li>
+                    <li><a href="blog.html">Blog</a></li>
                 </ul>
             </nav>
-            <div class="arabic-title">فهرست البحرين</div>
+            <div class="title-container right">
+                <h1 class="arabic-title">فهرست البحرين</h1>
+            </div>
         </div>
     </header>
 
     <main>
-        <article class="post-content">
-            <!-- Post Header -->
-            <header class="post-header">
-                <h1 class="post-title">Sample Blog Post Title</h1>
-                <div class="post-meta">
-                    <time datetime="2025-04-07">April 7, 2025</time> • Written by Author Name
+        <div class="container">
+            <article class="blog-post">
+                <header class="post-header">
+                    <h2 class="post-title">Blog Post Title</h2>
+                    <p class="post-meta">Posted on [Date] by [Author Name]</p>
+                </header>
+
+                <div class="post-content">
+                    <p>Introductory paragraph of the blog post. This should provide context and introduce the topic of the post. The text throughout the post will be justified according to the site's design requirements.</p>
+
+                    <h3>First Subheading</h3>
+                    <p>Content under the first subheading. This could include detailed discussion of the topic, analysis, or commentary. Additional paragraphs can be added as needed to develop ideas fully.</p>
+
+                    <p>Another paragraph continuing the discussion from above. The Gentium Plus font gives the text a scholarly yet readable appearance, appropriate for a historical bibliography site.</p>
+
+                    <figure class="post-image">
+                        <img src="blog-post-image-1.jpg" alt="Description of image">
+                        <figcaption>Caption for the image, providing context or source information.</figcaption>
+                    </figure>
+
+                    <h3>Second Subheading</h3>
+                    <p>Content under the second subheading. This section might introduce a new aspect of the topic or provide additional context for the discussion.</p>
+
+                    <blockquote>
+                        <p>This is an example of a block quote that might contain a citation from a historical source, scholarly work, or other relevant text. The distinctive styling helps it stand out from the regular content.</p>
+                        <cite>— Source of the quotation</cite>
+                    </blockquote>
+
+                    <p>Further discussion that might reference or respond to the block quote above. The text continues to be justified, creating a clean, formal appearance suitable for academic content.</p>
+
+                    <h3>Third Subheading</h3>
+                    <p>Content under the third subheading. This could include concluding thoughts, implications of the discussion, or suggestions for further research or reading.</p>
+
+                    <figure class="post-image">
+                        <img src="blog-post-image-2.jpg" alt="Description of second image">
+                        <figcaption>Caption for the second image, providing context or source information.</figcaption>
+                    </figure>
+
+                    <p>Final paragraph that might summarize key points or offer closing reflections on the topic.</p>
                 </div>
-                <img src="images/featured-post.jpg" alt="Featured Image" class="post-featured-image">
-            </header>
-            
-            <!-- Post Content -->
-            <div class="post-content">
-                <p>This is an introductory paragraph to the blog post. It should provide context and engage the reader. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nisl eget ultricies tincidunt, nisl nisl aliquet nisl, eget aliquet nisl nisl eget nisl.</p>
-                
-                <h2>First Main Heading</h2>
-                <p>This is the first section of the blog post. It should explore one aspect of the topic in detail. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nisl eget ultricies tincidunt, nisl nisl aliquet nisl, eget aliquet nisl nisl eget nisl.</p>
-                
-                <blockquote>
-                    <p>This is a blockquote. It can be used to highlight important quotes or passages from the text. It stands out visually from the rest of the content.</p>
-                    <cite>— Source Name</cite>
-                </blockquote>
-                
-                <h3>Subheading Within First Section</h3>
-                <p>This is a subsection that provides more specific details about the topic discussed in the first main heading. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                
-                <div class="post-image-container">
-                    <img src="images/post-image1.jpg" alt="Descriptive Image Caption" class="post-image">
-                    <p class="image-caption">Caption for the image explaining what it shows or its significance.</p>
-                </div>
-                
-                <h2>Second Main Heading</h2>
-                <p>This is the second major section of the blog post. It explores another important aspect of the topic. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                
-                <ul>
-                    <li>This is a bulleted list item.</li>
-                    <li>This is another bulleted list item with more text to demonstrate how wrapping works.</li>
-                    <li>A third bulleted list item.</li>
-                </ul>
-                
-                <h3>Subheading Within Second Section</h3>
-                <p>More detailed information about the second main topic. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                
-                <ol>
-                    <li>This is a numbered list item.</li>
-                    <li>This is the second item in the numbered list.</li>
-                    <li>The third item in the numbered list.</li>
-                </ol>
-                
-                <h2>Conclusion</h2>
-                <p>This is the conclusion of the blog post. It should summarize the main points and potentially suggest next steps or further reading. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                
-                <!-- Post Tags -->
-                <div class="post-tags">
-                    <span class="tag">Tag 1</span>
-                    <span class="tag">Tag 2</span>
-                    <span class="tag">Tag 3</span>
-                </div>
-                
-                <!-- Post Navigation -->
-                <nav class="post-navigation">
-                    <div class="post-nav-link">
-                        <span class="post-nav-label">Previous Post</span>
-                        <a href="#" class="post-nav-title">Title of Previous Post</a>
-                    </div>
-                    <div class="post-nav-link">
-                        <span class="post-nav-label">Next Post</span>
-                        <a href="#" class="post-nav-title">Title of Next Post</a>
-                    </div>
-                </nav>
-            </div>
-            
-            <!-- Related Posts -->
-            <section class="related-posts">
-                <h3 class="related-posts-title">Related Posts</h3>
-                <div class="related-posts-grid">
-                    <!-- Related Post 1 -->
-                    <article class="blog-card">
-                        <img src="images/related1.jpg" alt="Related Post" class="blog-card-image">
-                        <div class="blog-card-content">
-                            <h4 class="blog-card-title">Related Post Title</h4>
-                            <div class="blog-card-meta">
-                                <span class="blog-card-date">March 25, 2025</span>
-                                <a href="#" class="blog-card-read-more">Read</a>
-                            </div>
-                        </div>
-                    </article>
-                    
-                    <!-- Related Post 2 -->
-                    <article class="blog-card">
-                        <img src="images/related2.jpg" alt="Related Post" class="blog-card-image">
-                        <div class="blog-card-content">
-                            <h4 class="blog-card-title">Another Related Post</h4>
-                            <div class="blog-card-meta">
-                                <span class="blog-card-date">March 10, 2025</span>
-                                <a href="#" class="blog-card-read-more">Read</a>
-                            </div>
-                        </div>
-                    </article>
-                    
-                    <!-- Related Post 3 -->
-                    <article class="blog-card">
-                        <img src="images/related3.jpg" alt="Related Post" class="blog-card-image">
-                        <div class="blog-card-content">
-                            <h4 class="blog-card-title">One More Related Post</h4>
-                            <div class="blog-card-meta">
-                                <span class="blog-card-date">February 28, 2025</span>
-                                <a href="#" class="blog-card-read-more">Read</a>
-                            </div>
-                        </div>
-                    </article>
-                </div>
-            </section>
-        </article>
+
+                <footer class="post-footer">
+                    <p class="post-tags">Tags: <a href="#">Tag 1</a>, <a href="#">Tag 2</a>, <a href="#">Tag 3</a></p>
+                    <p class="post-navigation">
+                        <a href="#" class="prev-post">Previous Post</a>
+                        <a href="blog.html" class="back-to-blog">Back to All Posts</a>
+                        <a href="#" class="next-post">Next Post</a>
+                    </p>
+                </footer>
+            </article>
+        </div>
     </main>
 
     <footer>
-        <p>&copy; 2025 Your Site Name. All rights reserved.</p>
+        <p>&copy; 2025 Bahrain Fihrist. All rights reserved.</p>
     </footer>
-
-    <script>
-        // Optional JavaScript for enhancing blog post functionality
-        
-        document.addEventListener('DOMContentLoaded', function() {
-            // Hide header on scroll down, show on scroll up
-            let lastScrollTop = 0;
-            const header = document.querySelector('header');
-            
-            window.addEventListener('scroll', function() {
-                let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
-                
-                if (currentScroll > lastScrollTop && currentScroll > 200) {
-                    // Scrolling down & past threshold
-                    header.classList.add('header-hidden');
-                } else {
-                    // Scrolling up
-                    header.classList.remove('header-hidden');
-                }
-                
-                lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
-            }, false);
-            
-            // Add functionality to make blockquotes stand out
-            const blockquotes = document.querySelectorAll('blockquote');
-            blockquotes.forEach(quote => {
-                quote.addEventListener('mouseenter', function() {
-                    this.style.transform = 'scale(1.01)';
-                    this.style.transition = 'transform 0.3s ease';
-                });
-                
-                quote.addEventListener('mouseleave', function() {
-                    this.style.transform = 'scale(1)';
-                });
-            });
-        });
-    </script>
 </body>
 </html>
