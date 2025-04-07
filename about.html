@@ -3,58 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bahrain Fihrist | About</title>
+    <title>About - Bahrain Fihrist</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Gentium+Plus:ital,wght@0,400;0,700;1,400;1,700&family=Rakkas&family=Scheherazade+New:wght@400;700&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
 </head>
 <body>
-    <header>
+    <header id="site-header">
         <div class="header-container">
-            <h1 class="english-title">Bahrain Fihrist</h1>
+            <div class="title-container">
+                <h1 class="english-title">Bahrain Fihrist</h1>
+            </div>
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="primary-sources.html">Primary Sources</a></li>
                     <li><a href="studies.html">Studies</a></li>
-                    <li><a href="posts.html">Posts</a></li>
+                    <li><a href="blog.html">Blog</a></li>
                 </ul>
             </nav>
-            <h1 class="arabic-title">فهرست البحرين</h1>
+            <div class="title-container right">
+                <h1 class="arabic-title">فهرست البحرين</h1>
+            </div>
         </div>
     </header>
-    
+
     <main>
-        <div class="content-container">
-            <h2>About the Project</h2>
-            <div class="about-description">
-                <p>The Bahrain Fihrist project aims to create a comprehensive bibliography of works related to Bahraini history. By bringing together both primary sources and scholarly studies in one accessible platform, we hope to facilitate research and deepen understanding of Bahrain's rich historical heritage.</p>
-                <p>This digital bibliography serves as a resource for academics, researchers, students, and anyone interested in the history of Bahrain and the wider Gulf region. Our team carefully curates and organizes these references to ensure the highest standards of academic rigor.</p>
-                <p>The term "Fihrist" (فهرست) refers to a catalog or index in Arabic, reflecting our mission to systematically organize and present historical works about Bahrain.</p>
-            </div>
-            
-            <div class="about-image-container">
-                <img 
-                    src="assets/Portugeuse_Fort.png" 
-                    alt="Old Portuguese Fort, Bahrein' [‎20r-c] (1/1), British Library: Visual Arts, Photo 355/1/39, in Qatar Digital Library." 
-                    class="about-image"
-                >
-                <p class="image-caption">'Old Portuguese Fort, Bahrein' [‎20r-c] (1/1), British Library: Visual Arts, Photo 355/1/39, in Qatar Digital Library.</p>
-            </div>
-            
-            <h2>About the Founder</h2>
-            <div class="team-container">
-                <div class="team-member">
-                <div class="team-member-img-container">
-                    <img src="assets/profile.png" alt="Adam Ramadhan">
+        <div class="container">
+            <section class="about-section">
+                <h2>About Bahrain Fihrist</h2>
+                <p>Bahrain Fihrist is a specialized online bibliography dedicated to collating and organizing scholarly works and primary sources related to the history of Bahrain. The term "Fihrist" (فهرست) refers to an index or catalogue in Arabic, reflecting our mission to create a comprehensive reference tool for researchers, academics, and anyone interested in Bahraini history.</p>
+                <p>This project aims to facilitate research by providing a structured, accessible, and continuously updated repository of bibliographic information. We hope to bridge gaps in existing research infrastructure and promote further study of Bahrain's rich historical landscape.</p>
+                <p>Our bibliography encompasses a wide range of materials, from ancient manuscripts to contemporary academic studies, covering political, social, economic, cultural, and religious aspects of Bahrain's history.</p>
+            </section>
+
+            <section class="feature-image">
+                <img src="placeholder-landscape.jpg" alt="Bahrain Historical Landscape">
+            </section>
+
+            <section class="team-section">
+                <h2>Our Team</h2>
+                <div class="team-members">
+                    <div class="team-member">
+                        <div class="member-image">
+                            <img src="team-member-1.jpg" alt="Team Member 1">
+                        </div>
+                        <div class="member-info">
+                            <h3>Team Member Name</h3>
+                            <p>Brief biography of the team member. Description of their role in the project, academic background, research interests, and contributions to Bahraini historical studies.</p>
+                            <p><a href="https://example.com" target="_blank">Personal Website</a></p>
+                        </div>
+                    </div>
+
+                    <div class="team-member">
+                        <div class="member-image">
+                            <img src="team-member-2.jpg" alt="Team Member 2">
+                        </div>
+                        <div class="member-info">
+                            <h3>Team Member Name</h3>
+                            <p>Brief biography of the team member. Description of their role in the project, academic background, research interests, and contributions to Bahraini historical studies.</p>
+                            <p><a href="https://example.com" target="_blank">Personal Website</a></p>
+                        </div>
+                    </div>
                 </div>
-                <h3>Adam Ramadhan</h3>
-                <p>PhD candidate at Universiteit Leiden working on the social and intellectual history of early Shiʿi Islam.</p>
-                <a href="https://adamaramadhan.github.io/" target="_blank">Learn More</a>
-                </div>
-            </div>
+            </section>
         </div>
     </main>
 
