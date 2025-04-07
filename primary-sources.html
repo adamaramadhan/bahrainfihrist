@@ -3,100 +3,114 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bahrain Fihrist | Primary Sources</title>
+    <title>Primary Sources - Bahrain Fihrist</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Gentium+Plus:ital,wght@0,400;0,700;1,400;1,700&family=Rakkas&family=Scheherazade+New:wght@400;700&display=swap" rel="stylesheet">
-    <script src="scripts.js" defer></script>
+    <script src="script.js" defer></script>
 </head>
 <body>
-    <header>
+    <header id="site-header">
         <div class="header-container">
-            <h1 class="english-title">Bahrain Fihrist</h1>
+            <div class="title-container">
+                <h1 class="english-title">Bahrain Fihrist</h1>
+            </div>
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="primary-sources.html">Primary Sources</a></li>
                     <li><a href="studies.html">Studies</a></li>
-                    <li><a href="posts.html">Posts</a></li>
+                    <li><a href="blog.html">Blog</a></li>
                 </ul>
             </nav>
-            <h1 class="arabic-title">فهرست البحرين</h1>
+            <div class="title-container right">
+                <h1 class="arabic-title">فهرست البحرين</h1>
+            </div>
         </div>
     </header>
-    
+
     <main>
-        <div class="content-container">
+        <div class="container">
             <h2>Primary Sources</h2>
-            <p>This section contains original historical documents, manuscripts, and firsthand accounts related to Bahrain's history. Click on each category to explore the sources within.</p>
-            
-            <div class="dropdown-section">
-                <button class="dropdown-button">Historical Chronicles</button>
-                <div class="dropdown-content">
-                    <ul class="bibliography-list">
-                        <li>
-                            <p class="bib-entry">Al-Bahrani, Yusuf. <em>Lu'lu'at al-Bahrayn</em>. Ed. Muhammad Sadiq Bahr al-'Ulum. Najaf: Matba'at al-Nu'man, 1966.</p>
-                            <p class="bib-note">A seminal biographical dictionary of Bahraini scholars from the 13th century CE.</p>
-                        </li>
-                        <li>
-                            <p class="bib-entry">Ibn Battuta. <em>Rihlat Ibn Battuta</em>. Beirut: Dar Sadir, 1964.</p>
-                            <p class="bib-note">Contains descriptions of Bahrain during the author's travels in the 14th century.</p>
-                        </li>
-                        <!-- Add more entries as needed -->
-                    </ul>
+            <p>This page catalogs primary sources related to Bahraini history. Sources are organized by category for easier navigation.</p>
+
+            <div class="accordion-container">
+                <div class="accordion">
+                    <div class="accordion-header">
+                        <h3>Historical Chronicles and Manuscripts</h3>
+                        <span class="accordion-icon">+</span>
+                    </div>
+                    <div class="accordion-content">
+                        <ul class="bibliography-list">
+                            <li>
+                                <p><strong>Author Name</strong> (Year). <em>Title of Manuscript</em>. Location: Repository Information.</p>
+                                <p>Brief description of the source, its significance, and any notable features.</p>
+                            </li>
+                            <li>
+                                <p><strong>Author Name</strong> (Year). <em>Title of Chronicle</em>. Location: Repository Information.</p>
+                                <p>Brief description of the source, its significance, and any notable features.</p>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-            
-            <div class="dropdown-section">
-                <button class="dropdown-button">Travelers' Accounts</button>
-                <div class="dropdown-content">
-                    <ul class="bibliography-list">
-                        <li>
-                            <p class="bib-entry">Lorimer, J.G. <em>Gazetteer of the Persian Gulf, Oman and Central Arabia</em>. Calcutta: Superintendent Government Printing, 1908-1915.</p>
-                            <p class="bib-note">Contains detailed information about Bahrain in the early 20th century.</p>
-                        </li>
-                        <li>
-                            <p class="bib-entry">Palgrave, William Gifford. <em>Narrative of a Year's Journey Through Central and Eastern Arabia (1862-63)</em>. London: Macmillan and Co., 1865.</p>
-                            <p class="bib-note">Includes observations on Bahrain during the author's travels.</p>
-                        </li>
-                        <!-- Add more entries as needed -->
-                    </ul>
+
+                <div class="accordion">
+                    <div class="accordion-header">
+                        <h3>Travelers' Accounts</h3>
+                        <span class="accordion-icon">+</span>
+                    </div>
+                    <div class="accordion-content">
+                        <ul class="bibliography-list">
+                            <li>
+                                <p><strong>Traveler Name</strong> (Year). <em>Title of Travel Account</em>. Publisher.</p>
+                                <p>Brief description of the account, the traveler's background, time spent in Bahrain, and significance.</p>
+                            </li>
+                            <li>
+                                <p><strong>Traveler Name</strong> (Year). <em>Title of Travel Account</em>. Publisher.</p>
+                                <p>Brief description of the account, the traveler's background, time spent in Bahrain, and significance.</p>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-            
-            <div class="dropdown-section">
-                <button class="dropdown-button">Government Documents</button>
-                <div class="dropdown-content">
-                    <ul class="bibliography-list">
-                        <li>
-                            <p class="bib-entry">British Political Agency Records, Bahrain. India Office Records, British Library.</p>
-                            <p class="bib-note">Archive containing correspondence and reports relating to Bahrain, 1900-1947.</p>
-                        </li>
-                        <li>
-                            <p class="bib-entry">Annual Reports on the Persian Gulf. Foreign Office Records, The National Archives, UK.</p>
-                            <p class="bib-note">Contains yearly assessments of political and economic developments in Bahrain.</p>
-                        </li>
-                        <!-- Add more entries as needed -->
-                    </ul>
+
+                <div class="accordion">
+                    <div class="accordion-header">
+                        <h3>Government Documents</h3>
+                        <span class="accordion-icon">+</span>
+                    </div>
+                    <div class="accordion-content">
+                        <ul class="bibliography-list">
+                            <li>
+                                <p><strong>Authority Name</strong> (Year). <em>Title of Document</em>. Location: Archive Reference.</p>
+                                <p>Brief description of the document, its historical context, and significance.</p>
+                            </li>
+                            <li>
+                                <p><strong>Authority Name</strong> (Year). <em>Title of Document</em>. Location: Archive Reference.</p>
+                                <p>Brief description of the document, its historical context, and significance.</p>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-            
-            <div class="dropdown-section">
-                <button class="dropdown-button">Archaeological Records</button>
-                <div class="dropdown-content">
-                    <ul class="bibliography-list">
-                        <li>
-                            <p class="bib-entry">Glob, P.V. <em>Danish Archaeological Investigations in Bahrain</em>. Copenhagen: Gyldendal, 1957.</p>
-                            <p class="bib-note">Documentation of early archaeological excavations in Bahrain.</p>
-                        </li>
-                        <li>
-                            <p class="bib-entry">Rice, Michael. <em>The Archaeology of the Arabian Gulf</em>. London: Routledge, 1994.</p>
-                            <p class="bib-note">Contains chapters on archaeological findings in Bahrain.</p>
-                        </li>
-                        <!-- Add more entries as needed -->
-                    </ul>
+
+                <div class="accordion">
+                    <div class="accordion-header">
+                        <h3>Inscriptions and Archaeological Records</h3>
+                        <span class="accordion-icon">+</span>
+                    </div>
+                    <div class="accordion-content">
+                        <ul class="bibliography-list">
+                            <li>
+                                <p><strong>Site/Discovery Location</strong> (Estimated Date). <em>Description of Inscription</em>. Current Location.</p>
+                                <p>Brief description of the inscription, its content, discovery, and historical significance.</p>
+                            </li>
+                            <li>
+                                <p><strong>Site/Discovery Location</strong> (Estimated Date). <em>Description of Archaeological Record</em>. Current Location.</p>
+                                <p>Brief description of the archaeological record, its content, discovery, and historical significance.</p>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
