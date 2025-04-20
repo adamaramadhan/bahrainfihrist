@@ -1,39 +1,34 @@
+// Set current year in footer
+document.getElementById('current-year').textContent = new Date().getFullYear();
+
+// Header hiding on scroll
+let lastScrollPosition = 0;
+const header = document.getElementById('site-header');
+
+window.addEventListener('scroll', () => {
+    const currentScrollPosition = window.pageYOffset;
+    
+    if (currentScrollPosition > lastScrollPosition && currentScrollPosition > 100) {
+        // Scrolling down - hide header
+        header.style.transform = 'translateY(-100%)';
+    } else {
+        // Scrolling up - show header
+        header.style.transform = 'translateY(0)';
+    }
+    
+    lastScrollPosition = currentScrollPosition;
+});
+
+// Accordion functionality for Fihrist page
 document.addEventListener('DOMContentLoaded', () => {
-    // Header visibility on scroll
-    const header = document.getElementById('site-header');
-    let lastScrollTop = 0;
+    const accordionTitles = document.querySelectorAll('.accordion-title');
     
-    window.addEventListener('scroll', () => {
-        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-        
-        // Show/hide header based on scroll direction
-        if (scrollTop > lastScrollTop && scrollTop > 100) {
-            // Scrolling down & past header
-            header.classList.add('header-hidden');
-        } else {
-            // Scrolling up
-            header.classList.remove('header-hidden');
-        }
-        
-        lastScrollTop = scrollTop;
-    });
-    
-    // Accordion functionality
-    const accordions = document.querySelectorAll('.accordion');
-    
-    accordions.forEach(accordion => {
-        const header = accordion.querySelector('.accordion-header');
-        
-        header.addEventListener('click', () => {
-            // Toggle current accordion
-            accordion.classList.toggle('active');
-            
-            // Optional: Close other accordions when opening one
-            // accordions.forEach(item => {
-            //     if (item !== accordion) {
-            //         item.classList.remove('active');
-            //     }
-            // });
+    if (accordionTitles) {
+        accordionTitles.forEach(title => {
+            title.addEventListener('click', () => {
+                const accordion = title.parentElement;
+                accordion.classList.toggle('accordion-open');
+            });
         });
-    });
+    }
 });
