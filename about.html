@@ -4,62 +4,66 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About - Bahrain Fihrist</title>
-    <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Gentium+Plus:ital,wght@0,400;0,700;1,400;1,700&family=Rakkas&family=Scheherazade+New:wght@400;700&display=swap" rel="stylesheet">
-    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header id="site-header">
         <div class="header-container">
-            <div class="title-container">
+            <div class="site-title">
                 <h1 class="english-title">Bahrain Fihrist</h1>
             </div>
-            <nav>
+            <nav class="main-navigation">
                 <ul>
-                    <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="primary-sources.html">Primary Sources</a></li>
                     <li><a href="studies.html">Studies</a></li>
                     <li><a href="blog.html">Blog</a></li>
                 </ul>
             </nav>
-            <div class="title-container right">
+            <div class="site-title">
                 <h1 class="arabic-title">فهرست البحرين</h1>
             </div>
         </div>
     </header>
 
     <main>
-        <div class="container">
-            <section class="about-section">
-                <h2>About Bahrain Fihrist</h2>
-                <p>Bahrain Fihrist is a specialized online bibliography dedicated to collating and organizing scholarly works and primary sources related to the history of Bahrain. The term "Fihrist" (فهرست) refers to an index or catalogue in Arabic, reflecting our mission to create a comprehensive reference tool for researchers, academics, and anyone interested in Bahraini history.</p>
-                <p>This project aims to facilitate research by providing a structured, accessible, and continuously updated repository of bibliographic information. We hope to bridge gaps in existing research infrastructure and promote further study of Bahrain's rich historical landscape.</p>
-                <p>Our bibliography encompasses a wide range of materials, from ancient manuscripts to contemporary academic studies, covering political, social, economic, cultural, and religious aspects of Bahrain's history.</p>
-            </section>
+        <section class="about-content">
+            <h2>About Bahrain Fihrist</h2>
+            <p>Bahrain Fihrist is a comprehensive bibliographic resource dedicated to works on Bahraini history. Our mission is to compile and organize scholarly resources, primary source materials, and academic studies related to the rich historical legacy of Bahrain.</p>
+            <p>This bibliography aims to serve as a reference tool for researchers, students, and anyone interested in exploring the history of Bahrain from ancient times to the modern era.</p>
+            <p>We continuously update this resource to include the latest publications and discoveries in the field.</p>
+        </section>
 
-            <section class="team-section">
-                <h2>Our Team</h2>
-                <div class="team-members">
-                    <div class="team-member">
-                        <div class="member-image">
-                            <img src="profile.png" alt="Adam Ramadhan">
-                        </div>
-                        <div class="member-info">
-                            <h3>Adam Ramadhan</h3>
-                            <p>PhD candidate at Universiteit Leiden working on the social and intellectual history of early Shiʿi Islam.</p>
-                            <p><a href="https://adamaramadhan.github.io/" target="_blank">Personal Website</a></p>
-                        </div>
-                    </div>
+        <section class="team-section">
+            <h2>Our Team</h2>
+            
+            <div class="team-member">
+                <img src="/api/placeholder/120/120" alt="Team Member Name" class="team-photo">
+                <div class="team-bio">
+                    <h3>Team Member Name</h3>
+                    <p>Brief biography of the team member. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Phasellus euismod, nunc sit amet aliquam lacinia, nisl nisl aliquam nisl, eget aliquam nisl nisl sit amet nisl.</p>
+                    <p><a href="https://example.com" target="_blank">Personal Website</a></p>
                 </div>
-            </section>
-        </div>
+            </div>
+
+            <div class="team-member">
+                <img src="/api/placeholder/120/120" alt="Team Member Name" class="team-photo">
+                <div class="team-bio">
+                    <h3>Team Member Name</h3>
+                    <p>Brief biography of the team member. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Phasellus euismod, nunc sit amet aliquam lacinia, nisl nisl aliquam nisl, eget aliquam nisl nisl sit amet nisl.</p>
+                    <p><a href="https://example.com" target="_blank">Personal Website</a></p>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer>
-        <p>&copy; 2025 Bahrain Fihrist. All rights reserved.</p>
+        <p>&copy; <span id="current-year"></span> Bahrain Fihrist</p>
     </footer>
+
+    <script src="scripts.js"></script>
 </body>
 </html>
