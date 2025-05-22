@@ -11,6 +11,11 @@
     <header class="header" id="header">
         <div class="header-content">
             <div class="site-title-left">Bahrain Fihrist</div>
+            <div class="hamburger" onclick="toggleMobileMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
             <nav class="nav-menu">
                 <a href="index.html" class="nav-link">Home</a>
                 <a href="about.html" class="nav-link">About</a>
@@ -19,6 +24,13 @@
                 <a href="online-resources.html" class="nav-link">Online Resources</a>
             </nav>
             <div class="site-title-right arabic">فهرست البحرين</div>
+        </div>
+        <div class="nav-overlay" id="navOverlay">
+            <a href="index.html" class="nav-link" onclick="closeMobileMenu()">Home</a>
+            <a href="about.html" class="nav-link" onclick="closeMobileMenu()">About</a>
+            <a href="primary-sources.html" class="nav-link" onclick="closeMobileMenu()">Primary Sources</a>
+            <a href="studies.html" class="nav-link" onclick="closeMobileMenu()">Studies</a>
+            <a href="online-resources.html" class="nav-link" onclick="closeMobileMenu()">Online Resources</a>
         </div>
     </header>
 
@@ -35,9 +47,9 @@
         <div class="founder-section">
             <img src="images/founder-photo.jpg" alt="Founder Photo" class="founder-photo">
             <div class="founder-info">
-                <h3>Dr. [Your Name]</h3>
-                <p>Dr. [Your Name] is a historian specializing in Arabian Gulf studies with a particular focus on Bahraini history. [Add your brief biography here - education, current position, research interests, and notable publications.]</p>
-                <p><a href="https://your-website.com" class="founder-link" target="_blank">Visit Website</a></p>
+                <h3>Adam Ramadhan</h3>
+                <p>Adam Ramadhan is a PhD candidate at Universiteit Leiden working on the social and intellectual history of of early Shiʿi Islam. Aside from this, he maintains an interest in Islamic legal studies and in the social, cultural, and intellectual history of the Persian Gulf, in paritulcar, Bahrain.</p>
+                <p><a href="https://adamaramahdan.github.io" class="founder-link" target="_blank">Visit Website</a></p>
             </div>
         </div>
     </main>
