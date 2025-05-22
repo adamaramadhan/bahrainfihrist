@@ -45,7 +45,7 @@ body {
 }
 
 .site-title-right {
-    font-family: 'Rakkas', cursive;
+    font-family: 'Rakkas', cursive !important;
     font-weight: 400;
     font-size: 1.8rem;
     direction: rtl;
@@ -210,6 +210,25 @@ body {
     font-family: 'Scheherazade New', serif;
     direction: rtl;
     text-align: right;
+}
+
+.site-title-right.arabic {
+    font-family: 'Rakkas', cursive !important;
+}
+
+.footer {
+    background-color: #F5F4EF;
+    padding: 2rem 0;
+    margin-top: 4rem;
+    text-align: center;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
 }
 
 h2 {
