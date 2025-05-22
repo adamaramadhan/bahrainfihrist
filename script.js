@@ -18,7 +18,36 @@ window.addEventListener('scroll', function() {
 // Dropdown functionality
 function toggleDropdown(header) {
     const dropdown = header.parentElement;
-    dropdown.classList.toggle('open');
+    const content = dropdown.querySelector('.dropdown-content');
+    
+    // Close other open dropdowns first
+    const openDropdowns = document.querySelectorAll('.dropdown.open');
+    openDropdowns.forEach(openDropdown => {
+        if (openDropdown !== dropdown) {
+            openDropdown.classList.remove('open');
+        }
+    });
+    
+    // Toggle current dropdown
+    if (dropdown.classList.contains('open')) {
+        dropdown.classList.remove('open');
+    } else {
+        // Get the natural height of the content
+        dropdown.classList.add('open');
+        const height = content.scrollHeight;
+        content.style.height = '0px';
+        
+        // Force a reflow
+        content.offsetHeight;
+        
+        // Animate to the natural height
+        content.style.height = height + 'px';
+        
+        // Clean up after animation
+        setTimeout(() => {
+            content.style.height = 'auto';
+        }, 200);
+    }
 }
 
 // Close dropdown when clicking outside
