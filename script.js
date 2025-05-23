@@ -4,7 +4,7 @@ const header = document.getElementById('header');
 // Header hide/show on scroll
 window.addEventListener('scroll', function() {
     let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-
+    
     if (scrollTop > lastScrollTop && scrollTop > 100) {
         // Scrolling down
         header.classList.add('hidden');
@@ -37,16 +37,4 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             behavior: 'smooth'
         });
     });
-});
-
-// Hamburger toggle for mobile navigation
-document.getElementById('hamburger').addEventListener('click', function() {
-    const navMenu = document.getElementById('navMenu');
-    navMenu.classList.toggle('active');
-});
-
-// Hamburger toggle for mobile navigation
-document.getElementById('hamburger').addEventListener('click', function() {
-    const navMenu = document.getElementById('navMenu');
-    navMenu.classList.toggle('active');
 });
