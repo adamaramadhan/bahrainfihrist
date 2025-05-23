@@ -298,3 +298,56 @@ h2 {
         padding: 0.8rem 1rem;
     }
 }
+
+/* Titles Row */
+.titles-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* Hamburger Menu Button */
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .nav-menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    background-color: #DA291C;
+    margin-top: 1rem;
+  }
+
+  .nav-menu.active {
+    display: flex;
+  }
+
+  .titles-row {
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .site-title-left,
+  .site-title-right {
+    font-size: 1.2rem;
+  }
+
+  .header-content {
+    align-items: flex-start;
+  }
+}
