@@ -352,18 +352,15 @@ h2 {
   }
 }
 
-/* Hamburger Menu Button */
-.hamburger {
-  display: none;
-  background: none;
-  border: none;
-  font-size: 2rem;
-  color: white;
-  cursor: pointer;
-}
-
-/* Mobile Navigation */
 @media (max-width: 768px) {
+  .header-content {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 0.5rem;
+  }
+
   .hamburger {
     display: block;
   }
@@ -382,17 +379,12 @@ h2 {
     display: flex;
   }
 
-  .header-content {
-    flex-wrap: wrap;
-    align-items: center;
+  .site-title-left,
+  .site-title-right {
+    font-size: 1.2rem;
   }
 
   .main-content {
     margin-top: 140px;
-  }
-
-  .site-title-left,
-  .site-title-right {
-    font-size: 1.2rem;
   }
 }
