@@ -108,11 +108,27 @@ body {
 }
 
 .home-blurb {
-    text-align: center;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
     font-size: 1.5rem;
     line-height: 1.8;
-    max-width: 800px;
+    max-width: 1000px;
     margin: 4rem auto;
+}
+
+.home-text {
+    flex: 1;
+    text-align: justify;
+}
+
+.home-image {
+    flex-shrink: 0;
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(52, 52, 51, 0.15);
 }
 
 .dropdown-container {
@@ -322,8 +338,21 @@ h2 {
     }
 
     .home-blurb {
+        flex-direction: column;
+        text-align: center;
         font-size: 1.2rem;
         margin: 2rem auto;
+        gap: 2rem;
+    }
+
+    .home-text {
+        text-align: justify;
+    }
+
+    .home-image {
+        width: 100%;
+        max-width: 300px;
+        height: 180px;
     }
 
     .founder-section {
