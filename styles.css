@@ -99,7 +99,7 @@ body {
 }
 
 .main-content {
-    margin-top: 120px;
+    margin-top: 80px;
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
@@ -249,7 +249,7 @@ body {
 .footer {
     background-color: #F5F4EF;
     padding: 2rem 0;
-    margin-top: 4rem;
+    margin-top: 2rem;
     text-align: center;
     color: #666;
     font-size: 0.9rem;
@@ -317,7 +317,7 @@ h2 {
     }
 
     .main-content {
-        margin-top: 100px;
+        margin-top: 70px;
         padding: 1rem;
     }
 
